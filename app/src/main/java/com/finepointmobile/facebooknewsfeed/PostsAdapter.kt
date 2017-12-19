@@ -23,7 +23,6 @@ class PostsAdapter(val posts: ArrayList<Post>, val context: Context) : RecyclerV
         holder.username.text = posts[position].username
         holder.text.text = posts[position].text
         Picasso.with(context).load(posts[position].photo).into(holder.photo)
-
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
